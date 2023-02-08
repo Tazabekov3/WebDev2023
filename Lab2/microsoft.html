@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Microsoft</title>
+    <style>
+        body {
+            background-color: white;
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        button {
+            cursor: pointer;
+        }
+        a {
+            text-decoration: none;
+            font-family: sans-serif;
+        }
+        header {
+            box-sizing: border-box;
+            width: 100%;
+            height: 55px;
+            display: flex;
+            flex-direction: row;
+            padding: 15px 6%;
+            align-items: center;
+        }
+        footer {
+            box-sizing: border-box;
+            background-color: #f2f2f2;
+            width: 100%;
+            height: 420px;
+            margin-top: 140px;
+            padding: 0 6%;
+        }
+        #ms_logo {
+            width: 8%;
+            margin-right: 25px;
+        }
+        #header_list_l {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+        #header_list_l a {
+            font-size: 13px;
+            color: #727272;
+            margin-right: 20px;
+        }
+        #header_list_r {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            margin-left: auto;
+        }
+        #header_list_r a {
+            font-size: 13px;
+            color: #727272;
+            margin-left: 20px;
+        }
+        .font_style {
+            font-family: sans-serif;
+            line-height: 1.5;
+        }
+        .image_text {
+            position: relative;
+            box-sizing: border-box;
+            margin-bottom: 90px;
+        }
+        .main_image_content {
+            position: absolute;
+            box-sizing: border-box;
+            top: 0;
+            left: 8%;
+            width: 500px;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        .main_image_content h2 {
+            color: white;
+            font-size: 36px;
+            font-weight: lighter;
+            margin-bottom: 0;
+        }
+        .main_image_content p {
+            color: white;
+            font-size: 17px;
+        }
+        .main_image_btn {
+            background-color: #0067b8;
+            border: none;
+            border-radius: 3px;
+            color: white;
+            width: 250px;
+            height: 40px;
+            font-size: 16px;
+        }
+        .product_list {
+            box-sizing: border-box;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            padding: 0 6%;
+        }
+        .block {
+            box-sizing: border-box;
+            width: 310px;
+        }
+        .block img {
+            width: 100%;
+        }
+        .block h2 {
+            font-size: 28px;
+            font-weight: lighter;
+            margin: 10px 0;
+        }
+        .block p {
+            margin-top: 0;
+            font-size: 16px;
+        }
+        .block a {
+            color: #2f83c5;
+        }
+        #footer_lists_container {
+            box-sizing: border-box;
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+        .footer_lists {
+            width: 50%;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            box-sizing: border-box;
+            padding-top: 20px;
+        }
+        .footer_lists p {
+            color: #515151;
+            font-weight: bold;
+            font-size: 14px;
+            margin-bottom: 0;
+        }
+        .list_object {
+            list-style-type: none;
+            padding-left: 0;
+            margin-top: 0;
+        }
+        .list_object li a {
+            width: 200px;
+            color: #727272;
+            display: flex;
+            flex-wrap: wrap;
+            margin-top: 20px;
+            font-family: sans-serif;
+            font-size: 11px;
+        }
+        #footer_bottom {
+            box-sizing: border-box;
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-end;
+            align-items: center;
+            margin: 20px 0 10px;
+        }
+        #footer_bottom a {
+            font-size: 11px;
+            font-family: sans-serif;
+            color: #727272;
+            margin-left: 10px;
+        }
+        #footer_bottom p {
+            font-size: 11px;
+            font-family: sans-serif;
+            color: #727272;
+            margin-left: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img id="ms_logo" src="images/ms_logo.png" alt="logo">
+        <div id="header_list_l">
+            <a href="">Microsoft 365</a>
+            <a href="">Office</a>
+            <a href="">Windows</a>
+            <a href="">Поддержка</a>
+        </div>
+        <div id="header_list_r">
+            <a href="">Продукты Майкрософт</a>
+            <a href="">Поиск</a>
+            <a href="">Войти</a>
+        </div>
+    </header>
+    <div class="image_text">
+        <img src="images/ms_site.jpg" alt="bg" width="100%">
+        <div class="main_image_content">
+            <h2 class="font_style">Разработано для жизни — сегодня и в будущем</h2>
+            <p class="font_style">Следующее поколение игр. Ваши цели. Друзья и семья. С Windows 11 вы станете ещё ближе к тому, что успели полюбить.</p>
+            <button class="main_image_btn">Проверьте, готов ли ваш ПК</button>
+        </div>
+    </div>
+    <div class="product_list">
+        <div class="block">
+            <img src="images/365.jpg" alt="prod">
+            <h2 class="font_style">Microsoft 365</h2>
+            <p class="font_style">Приложения и функции, которые помогут вам воплотить идеи в реальность, оставаться в безопасности и сосредоточиться на важных вещах в жизни.</p>
+            <a href="">Подробнее ></a>
+        </div>
+        <div class="block">
+            <img src="images/edge.jpg" alt="prod">
+            <h2 class="font_style">Microsoft Edge</h2>
+            <p class="font_style">Потрясающая производительность, больше конфиденциальности, продуктивности и дополнительных возможностей.</p>
+            <a href="">Подробнее ></a>
+        </div>
+        <div class="block">
+            <img src="images/onedrive.jpg" alt="prod">
+            <h2 class="font_style">Microsoft OneDrive</h2>
+            <p class="font_style">Сохраняйте свои файлы и фотографии на OneDrive — они будут доступны с любого устройства и где угодно.</p>
+            <a href="">Подробнее ></a>
+        </div>
+        <div class="block">
+            <img src="images/onenote.jpg" alt="prod">
+            <h2 class="font_style">OneNote</h2>
+            <p class="font_style">Приведите свои заметки и дела в порядок.</p>
+            <a href="">Подробнее ></a>
+        </div>
+    </div>
+    <div class="image_text" style="margin: 80px 6%;">
+        <img src="images/ms_scnd_img.jpg" alt="bg" width="100%">
+        <div class="main_image_content">
+            <h2 class="font_style" style="color: black">Outlook для iOS и Android</h2>
+            <p class="font_style" style="color: black">Будьте на связи. Организовывайте. Успевайте больше.</p>
+            <button class="main_image_btn" style="width: 100px">Скачать</button>
+        </div>
+    </div>
+    <h1 class="font_style" style="padding-left: 6%; font-weight: lighter;">Для бизнеса</h1>
+    <div class="product_list">
+        <div class="block">
+            <img src="images/ms_teams.jpg" alt="prod">
+            <h2 class="font_style">Скачайте Microsoft Teams бесплатно</h2>
+            <p class="font_style">Онлайн-собрания, чат и общее облачное хранилище — все в одном приложении.</p>
+            <a href="">Подробнее ></a>
+        </div>
+        <div class="block">
+            <img src="images/hybrid_world.jpg" alt="prod">
+            <h2 class="font_style">Встречайте гибридный мир</h2>
+            <p class="font_style">Попробуйте инструменты, ресурсы и стратегии, которые помогут вашим сотрудникам добиться успеха в новом мире гибкой рабочей среды.</p>
+            <a href="">Подробнее ></a>
+        </div>
+        <div class="block">
+            <img src="images/cloud_pc.jpg" alt="prod">
+            <h2 class="font_style">Добро пожаловать в Windows 365 Cloud PC</h2>
+            <p class="font_style">Работать с Windows в облаке Microsoft теперь можно на любых устройствах.</p>
+            <a href="">Подробнее ></a>
+        </div>
+        <div class="block">
+            <img src="images/edge_again.jpg" alt="prod">
+            <h2 class="font_style">Microsoft Edge</h2>
+            <p class="font_style">Производительность, совместимость, безопасность. Браузер для бизнеса.</p>
+            <a href="">Подробнее ></a>
+        </div>
+    </div>
+    <footer>
+        <div id="footer_lists_container">
+        <div class="footer_lists">
+            <div>
+                <p class="font_style">Что нового?</p>
+                <ul class="list_object">
+                    <li><a href="">Microsoft 365</a></li>
+                </ul>
+            </div>
+            <div>
+                <p class="font_style">Microsoft Store</p>
+                <ul class="list_object">
+                    <li><a href="">Профиль учётной записи</a></li>
+                    <li><a href="">Возврат товаров</a></li>
+                    <li><a href="">Отслеживание заказа</a></li>
+                </ul>
+            </div>
+            <div>
+                <p class="font_style">Для образования</p>
+                <ul class="list_object">
+                    <li><a href="">Microsoft для образования</a></li>
+                    <li><a href="">Устройства для образования</a></li>
+                    <li><a href="">Microsoft Teams для образования</a></li>
+                    <li><a href="">Microsoft 365 для образования</a></li>
+                    <li><a href="">Office для образования</a></li>
+                    <li><a href="">Подготовка и профессиональное развитие детей</a></li>
+                    <li><a href="">Специальное предложение для учащихся и родителей</a></li>
+                    <li><a href="">Azure для учащихся</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer_lists">
+            <div>
+                <p class="font_style">Для бизнеса</p>
+                <ul class="list_object">
+                    <li><a href="">Microsoft Cloud</a></li>
+                    <li><a href="">Microsoft Security</a></li>
+                    <li><a href="">Azure</a></li>
+                    <li><a href="">Dynamic 365</a></li>
+                    <li><a href="">Microsoft 365</a></li>
+                    <li><a href="">Microsoft Advertising</a></li>
+                    <li><a href="">Microsoft для промышленности</a></li>
+                    <li><a href="">Mircosoft Teams</a></li>
+                </ul>
+            </div>
+            <div>
+                <p class="font_style">Разработчики и ИТ</p>
+                <ul class="list_object">
+                    <li><a href="">Центр разработчиков</a></li>
+                    <li><a href="">Документация</a></li>
+                    <li><a href="">Microsoft Learn</a></li>
+                    <li><a href="">Сообщество Microsoft Tech</a></li>
+                    <li><a href="">Azure Marketplace</a></li>
+                    <li><a href="">AppSource</a></li>
+                    <li><a href="">Microsoft Power Platform</a></li>
+                    <li><a href="">Visual Studio</a></li>
+                </ul>
+            </div>
+            <div>
+                <p class="font_style">Компания</p>
+                <ul class="list_object">
+                    <li><a href="">Вакансии</a></li>
+                    <li><a href="">О корпорации Майкрософт</a></li>
+                    <li><a href="">Инвесторы</a></li>
+                    <li><a href="">Экологическая устойчивость</a></li>
+                </ul>
+            </div>
+        </div>
+        </div>
+        <div id="footer_bottom">
+            <a href="" style="margin-right: auto">Русский (Казахстан)</a>
+            <a href="">Связаться с Майкрософт</a>
+            <a href="">Конфиденциальность</a>
+            <a href="">Условия пользования</a>
+            <a href="">Товарные знаки</a>
+            <a href="">Сведения о рекламе</a>
+            <p>© Microsoft 2023</p>
+        </div>
+    </footer>
+</body>
+</html>

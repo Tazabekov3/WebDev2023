@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Instagram</title>
+	<style>
+		body {
+			background-color: #fafafa;
+            box-sizing: border-box;
+			padding: 0;
+			margin: 0;
+		}
+		button {
+			cursor: pointer;
+		}
+		p {
+			font-family: sans-serif;
+			font-size: 14px;
+		}
+		a {
+			color: black;
+			font-weight: bold;
+			text-decoration: none;
+		}
+		footer {
+			position: absolute;
+			box-sizing: border-box;
+			top: 85%;
+			width: 100%;
+			height: 120px;
+			background-color: white;
+			padding: 10px 8% 60px;
+            text-align: center;
+            margin-top: 30px;
+		}
+		footer a{
+			font-size: 12px;
+			font-family: sans-serif;
+			font-weight: normal;
+			color: #989da8;
+			margin-bottom: 8px;
+			margin-right: 20px;
+		}
+		#content {
+			position: absolute;
+			top: 5%;
+			box-sizing: border-box;
+			display: flex;
+			flex-direction: row;
+			justify-content: space-between;
+			align-items: center;
+			width: 100%;
+			padding: 0 25%;
+		}
+		.logo_box {
+			width: 500px;
+		}
+		.login_content {
+            align-items: center;
+            display: flex;
+            flex-direction: column;
+		}
+		.login_box {
+            box-sizing: border-box;
+            background-color: white;
+            border: 1px solid #989da8;
+			border-radius: 3px;
+			padding: 50px 40px 20px;
+			width: 350px;
+			height: 400px;
+			display: flex;
+			flex-direction: column;
+			justify-content: space-between;
+			align-items: center;
+		}
+        .login_cred {
+            box-sizing: border-box;
+            width: 100%;
+            height: 130px;
+            display: flex;
+			flex-direction: column;
+			justify-content: space-between;
+			align-items: center;
+        }
+		.login_cred > input {
+			box-sizing: border-box;
+			border: 1px solid #ddd;
+			border-radius: 2px;
+			font-size: 12px;
+			width: 100%;
+			height: 40px;
+			padding: 10px;
+            margin-bottom: 5px;
+		}
+		.login_button {
+			background-color: #4cb4f8;
+			border-radius: 8px;
+			border-style: none;
+            box-sizing: border-box;
+			color: white;
+			font-size: 15px;
+			font-weight: bold;
+			width: 100%;
+			height: 30px;
+            margin-top: 10px;
+		}
+        .or {
+            width: 100%;
+            box-sizing: border-box;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .login_with_fb {
+            border-style: none;
+			background: none;
+			color: #3c5587;
+			font-size: 15px;
+			width: 100%;
+			height: 18px;
+        }
+		.forgot_button {
+			border-style: none;
+			background: none;
+			color: #809bb5;
+			font-size: 12px;
+			width: 100%;
+			height: 18px;
+		}
+		.download_button {
+            background: none;
+            border: none;
+        }
+		#footer_inner {
+			width: 100%;
+			height: 100%;
+			display: flex;
+			flex-direction: column;
+			justify-content: space-between;
+            align-items: center;
+		}
+		#footer_options {
+			display: flex;
+			flex-wrap: wrap;
+            justify-content: center;
+		}
+        #footer_lang {
+            background: none;
+            border: none;
+            font-size: 12px;
+			font-family: sans-serif;
+			font-weight: normal;
+			color: #989da8;
+        }
+		#copyright {
+			font-family: sans-serif;
+			color: #989da8;
+			font-size: 12px;
+			margin-top: 10px;
+		}
+	</style>
+</head>
+<body>
+	<div id="content">
+		<div class="logo_box">
+			<img width="95%" src="images\insta.jpg" alt="logo">
+		</div>
+		<div class="login_content">
+			<div class="login_box">
+                <img width="60%" src="images\instagram_logo.png" alt="instagram">
+                <div class="login_cred">
+                    <input type="text" placeholder="Телефон, имя пользователя или эл. адрес">
+                    <input type="password" placeholder="Пароль">
+                    <button class="login_button">Вход</button>
+                </div>
+                <div class="or">
+                    <hr size="1px" width="100%">
+                    <p style="color: #989da8; margin: 0 20px;">ИЛИ</p>
+                    <hr size="1px" width="100%">
+                </div>
+                <button class="login_with_fb">Войти через Facebook</button>
+                <button class="forgot_button">Забыли пароль?</button>
+			</div>
+			<div class="login_box" style="height: auto; margin-top: 10px; padding: 5px 20px;">
+                <p>У вас ещё нет аккаунта? <a href="" style="color: #3caef8">Зарегистрироваться</a></p>
+            </div>
+            <p style="margin-top: 20px;">Установите приложение.</p>
+            <div class="or" style="padding: 0 17%;">
+                <button class="download_button" style="width: 125px;"><img style="width: 100%" src="images\get_from_gp.jpg" alt="gp"></button>
+                <button class="download_button" style="width: 100px"><img style="width: 100%" src="images\get_from_ms.jpg" alt="gp"></button>
+            </div>
+		</div>
+	</div>
+	<footer>
+		<div id="footer_inner">
+			<div id="footer_options">
+				<a href="">Meta</a>
+				<a href="">Информация</a>
+				<a href="">Блог</a>
+				<a href="">Вакансии</a>
+				<a href="">Помощь</a>
+				<a href="">API</a>
+				<a href="">конфиденциальность</a>
+				<a href="">Условия</a>
+				<a href="">Популярные аккаунты</a>
+				<a href="">Места</a>
+				<a href="">Instagram Lite</a>
+				<a href="">Загрузка контактов и лица, не являющиеся пользователями</a>
+			</div>
+            <div class="or" style="width: 22%; align-items: baseline;">
+                <select id="footer_lang">
+                    <option value="rus">Русский</option>
+                    <option value="eng">English</option>
+                    <option value="srb">Српски</option>
+                    <option value="ger">Deutsch</option>
+                    <option value="bel">Беларуская</option>
+                    <option value="pol">Polski</option>
+                </select>
+                <div id="copyright">© 2023 Instagram from Meta</div>
+            </div>
+		</div>
+	</footer>
+</body>
+</html>

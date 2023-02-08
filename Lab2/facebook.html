@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Facebook</title>
+	<style>
+		body {
+			background-color: #f0f2f5;
+			padding: 0;
+			margin: 0;
+		}
+		button {
+			cursor: pointer;
+		}
+		p {
+			font-family: sans-serif;
+			font-size: 14px;
+		}
+		a {
+			color: black;
+			font-weight: bold;
+			text-decoration: none;
+		}
+		footer {
+			position: absolute;
+			box-sizing: border-box;
+			top: 95%;
+			width: 100%;
+			height: 200px;
+			background-color: white;
+			padding: 20px 16%;
+		}
+		footer a{
+			font-size: 13px;
+			font-family: sans-serif;
+			font-weight: normal;
+			color: #a0afbb;
+			margin-bottom: 8px;
+			margin-right: 10px;
+		}
+		#content {
+			position: absolute;
+			top: 17%;
+			box-sizing: border-box;
+			display: flex;
+			flex-direction: row;
+			justify-content: space-between;
+			align-items: center;
+			width: 100%;
+			padding: 0 15%;
+		}
+		.logo_box {
+			width: 500px;
+		}
+		#login_box {
+			box-sizing: border-box;
+			width: 400px;
+			height: 350px;
+			background-color: white;
+			border-radius: 5px;
+			box-shadow: 0px 0px 15px  #c7cdd2;
+			padding: 20px 15px;
+		}
+		.login_box_inner {
+			width: 100%;
+			height: 100%;
+			display: flex;
+			flex-direction: column;
+			justify-content: space-between;
+			align-items: center;
+		}
+		.login_box_inner > input {
+			box-sizing: border-box;
+			border: 1px solid #ddd;
+			border-radius: 5px;
+			font-size: 18px;
+			width: 100%;
+			height: 50px;
+			padding: 20px;
+		}
+		.login_button {
+			background-color: #1877f2;
+			border-radius: 5px;
+			border-style: none;
+			color: white;
+			font-size: 22px;
+			font-weight: bold;
+			width: 100%;
+			height: 50px;
+		}
+		.forgot_button {
+			border-style: none;
+			background: none;
+			color: #1877f2;
+			font-size: 16px;
+			width: 100%;
+			height: 18px;
+		}
+		.signup_button {
+			background-color: #42b72a;
+			border-radius: 5px;
+			border-style: none;
+			color: white;
+			font-size: 18px;
+			font-weight: bold;
+			width: 70%;
+			height: 45px;
+		}
+		#footer_inner {
+			width: 100%;
+			height: 100%;
+			display: flex;
+			flex-direction: column;
+			justify-content: space-between;
+		}
+		#lang_list {
+			display: flex;
+			flex-wrap: wrap;
+		}
+		#lang_list > a {
+			margin-bottom: 0;
+		}
+		#footer_options {
+			display: flex;
+			flex-wrap: wrap;
+		}
+		#copyright {
+			font-family: sans-serif;
+			color: #a0afbb;
+			font-size: 13px;
+			margin-top: 10px;
+		}
+	</style>
+</head>
+<body>
+	<div id="content">
+		<div class="logo_box">
+			<img width="60%" src="images\facebook_logo.png" alt="logo">
+			<p style="font-size: 28px; text-align: left;">Facebook помогает вам всегда оставаться на связи и общаться со своими знакомыми.</p>
+		</div>
+		<div id="login_box">
+			<div class="login_box_inner">
+				<input type="text" placeholder="Электронная почта или номер телефона">
+				<input type="password" placeholder="Пароль">
+				<button class="login_button">Вход</button>
+				<button class="forgot_button">Забыли пароль?</button>
+				<hr size="1px" width="100%">
+				<button class="signup_button">Создать новый аккаунт</button>
+			</div>
+			<p style="font-size: 14px; margin-top: 45px; text-align: center;"><a href="">Создать Страницу</a> знаменитости, музыкальной группы или компании.</p>
+		</div>
+	</div>
+	<footer>
+		<div id="footer_inner">
+			<div id="lang_list">
+				<a href="">Русский</a>
+				<a href="">English</a>
+				<a href="">Türkçe</a>
+				<a href="">Bahasa Indonesia</a>
+				<a href="">中文(简体)</a>
+				<a href="">Қазақша</a>
+				<a href="">Deutsch</a>
+				<a href="">한국어</a>
+				<a href="">Shqip</a>
+				<a href="">Español</a>
+				<a href="">Português (Brasil)</a>
+			</div>
+			<hr size="1px" width="100%">
+			<div id="footer_options">
+				<a href="">Регистрация</a>
+				<a href="">Вход</a>
+				<a href="">Messenger</a>
+				<a href="">Facebook Lite</a>
+				<a href="">Watch</a>
+				<a href="">Места</a>
+				<a href="">Игры</a>
+				<a href="">Marketplace</a>
+				<a href="">Meta Pay</a>
+				<a href="">Oculus</a>
+				<a href="">Portal</a>
+				<a href="">Instagram</a>
+				<a href="">Bulletin</a>
+				<a href="">Благотворительные акции</a>
+				<a href="">Услуги</a>
+				<a href="">Центр информации о выборах</a>
+				<a href="">Политика конфиденциальности</a>
+				<a href="">Центр конфиденциальности</a>
+				<a href="">Группы</a>
+				<a href="">Информация</a>
+				<a href="">Создать рекламу</a>
+				<a href="">Создать страницу</a>
+				<a href="">Разработчикам</a>
+				<a href="">Вакансии</a>
+				<a href="">Файлы cookie</a>
+				<a href="">Рекламные предпочтения</a>
+				<a href="">Условия пользования</a>
+				<a href="">Справка</a>
+				<a href="">Загрузка контактов и лица, не являющиеся пользователями</a>
+			</div>
+			<div id="copyright">Meta © 2023</div>
+		</div>
+	</footer>
+</body>
+</html>
